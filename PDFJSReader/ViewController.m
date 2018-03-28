@@ -21,7 +21,7 @@
     
     PDFWebView *webView = [[PDFWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:webView];
-    NSString *pdfFilePath = [[NSBundle mainBundle] pathForResource:@"git搭建" ofType:@"pdf"];
+    NSString *pdfFilePath = [[NSBundle mainBundle] pathForResource:@"gittest" ofType:@"pdf"];
     [webView loadPDFFile:pdfFilePath];
 }
 @end

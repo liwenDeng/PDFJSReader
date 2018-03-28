@@ -14,6 +14,7 @@
 {
     _filePath = filePath;
     
+    // 如果现实电子签章 使用 generic/web
     NSString *viwerPath = [[NSBundle mainBundle] pathForResource:@"viewer" ofType:@"html" inDirectory:@"minified/web"];
     NSString *urlStr = [NSString stringWithFormat:@"%@?file=%@#page=1",viwerPath,filePath];
     urlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
